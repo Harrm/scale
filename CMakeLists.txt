@@ -73,9 +73,22 @@ if(CLANG_TIDY)
   include(cmake/clang-tidy.cmake)
 endif()
 
+add_subdirectory(deps)
 
+include_directories(
+    # project includes
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/src
+)
 
+include_directories(
+    SYSTEM
+    # system includes
+    deps/gsl/include
+    deps/outcome
+)
 
-add_executable(cmake_hunter_seed
-    main.cpp
-    )
+add_subdirectory(src)
+
+enable_testing()
+add_subdirectory(test)
