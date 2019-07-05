@@ -6,6 +6,9 @@
 add_subdirectory(common)
 
 add_library(scale
+    ../include/scale/scale_decoder_stream.hpp
+    ../include/scale/scale_encoder_stream.hpp
+    ../include/scale/scale_error.hpp
     scale_decoder_stream.cpp
     scale_encoder_stream.cpp
     scale_error.cpp
@@ -13,6 +16,6 @@ add_library(scale
 
 target_link_libraries(scale
     Boost::boost
-    buffer
+    scale_buffer
     outcome
     )

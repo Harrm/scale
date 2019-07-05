@@ -12,7 +12,7 @@ HunterGate(
     SHA1 "5a73f91df5f6109c0bb1104d0c0ee423f7bece79"
 )
 
-project(cmake_hunter_seed)
+project(scale)
 
 if(NOT EXISTS "${CMAKE_TOOLCHAIN_FILE}")
   # https://cgold.readthedocs.io/en/latest/tutorials/toolchain/globals/cxx-standard.html#summary

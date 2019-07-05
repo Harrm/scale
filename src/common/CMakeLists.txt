@@ -1,24 +1,16 @@
-add_library(hexutil
+add_library(scale_hexutil
   hexutil.hpp
   hexutil.cpp
   )
-target_link_libraries(hexutil
+target_link_libraries(scale_hexutil
   Boost::boost
   )
 
-add_library(buffer
+add_library(scale_buffer
   buffer.hpp
   buffer.cpp
   buffer_back_insert_iterator.cpp
   )
-target_link_libraries(buffer
-  hexutil
-  )
-
-add_library(blob
-  blob.hpp
-  blob.cpp
-  )
-target_link_libraries(blob
-  hexutil
+target_link_libraries(scale_buffer
+    scale_hexutil
   )
