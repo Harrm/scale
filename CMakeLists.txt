@@ -77,8 +77,8 @@ add_subdirectory(deps)
 
 include_directories(
     # project includes
-    ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/src
+    ${CURRENT_PROJECT_SOURCE_DIR}/include
+    ${CURRENT_PROJECT_SOURCE_DIR}/src
 )
 
 include_directories(
