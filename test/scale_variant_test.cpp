@@ -10,11 +10,11 @@
 #include <gsl/span>
 #include "testutil/outcome.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::decode;
-using kagome::scale::encode;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::decode;
+using scale::encode;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 class VariantFixture
     : public testing::TestWithParam<
@@ -58,7 +58,7 @@ TEST(ScaleVariant, DecodeU8Success) {
   ScaleDecoderStream s(match);
   boost::variant<uint8_t, uint32_t> val{};
   ASSERT_NO_THROW(s >> val);
-  kagome::visit_in_place(
+  scale::visit_in_place(
       val, [](uint8_t v) { ASSERT_EQ(v, 1); }, [](uint32_t v) { FAIL(); });
 }
 
@@ -74,6 +74,6 @@ TEST(ScaleVariant, DecodeU32Success) {
   ScaleDecoderStream s(match);
   boost::variant<uint8_t, uint32_t> val{};
   ASSERT_NO_THROW(s >> val);
-  kagome::visit_in_place(
+  scale::visit_in_place(
       val, [](uint32_t v) { ASSERT_EQ(v, 1); }, [](uint8_t v) { FAIL(); });
 }

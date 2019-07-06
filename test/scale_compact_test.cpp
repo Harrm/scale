@@ -11,13 +11,13 @@
 #include "common/hexutil.hpp"
 #include "testutil/outcome.hpp"
 
-using kagome::common::Buffer;
-using kagome::common::unhex;
-using kagome::scale::ByteArray;
-using kagome::scale::CompactInteger;
-using kagome::scale::decode;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::common::Buffer;
+using scale::common::unhex;
+using scale::ByteArray;
+using scale::CompactInteger;
+using scale::decode;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 /**
  * value parameterized tests
@@ -144,5 +144,5 @@ TEST(Scale, compactDecodeBigIntegerError) {
   EXPECT_OUTCOME_FALSE_2(err, decode<CompactInteger>(bytes));
 
   ASSERT_EQ(err.value(),
-            static_cast<int>(kagome::scale::DecodeError::NOT_ENOUGH_DATA));
+            static_cast<int>(scale::DecodeError::NOT_ENOUGH_DATA));
 }

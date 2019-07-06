@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_CORE_COMMON_OUTCOME_THROW_HPP
-#define KAGOME_CORE_COMMON_OUTCOME_THROW_HPP
+#ifndef CORE_COMMON_OUTCOME_THROW_HPP
+#define CORE_COMMON_OUTCOME_THROW_HPP
 
 #include <boost/system/system_error.hpp>
 #include <boost/throw_exception.hpp>
 #include "scale/scale_error.hpp"
 
-namespace kagome::scale::common {
+namespace scale::common {
   /**
    * @brief throws outcome::result error as boost exception
    * @tparam T enum error type
@@ -21,6 +21,6 @@ namespace kagome::scale::common {
     std::error_code ec = make_error_code(t);
     boost::throw_exception(std::system_error(ec));
   }
-}  // namespace kagome::scale::common
+}  // namespace scale::common
 
-#endif  // KAGOME_CORE_COMMON_OUTCOME_THROW_HPP
+#endif  // CORE_COMMON_OUTCOME_THROW_HPP

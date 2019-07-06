@@ -5,8 +5,8 @@
 
 #include "scale/scale_error.hpp"
 
-OUTCOME_CPP_DEFINE_CATEGORY(kagome::scale, EncodeError, e) {
-  using kagome::scale::EncodeError;
+OUTCOME_CPP_DEFINE_CATEGORY(scale, EncodeError, e) {
+  using scale::EncodeError;
   switch (e) {
     case EncodeError::NEGATIVE_COMPACT_INTEGER:
       return "compact integers cannot be negative";
@@ -20,8 +20,8 @@ OUTCOME_CPP_DEFINE_CATEGORY(kagome::scale, EncodeError, e) {
   return "unknown EncodeError";
 }
 
-OUTCOME_CPP_DEFINE_CATEGORY(kagome::scale, DecodeError, e) {
-  using kagome::scale::DecodeError;
+OUTCOME_CPP_DEFINE_CATEGORY(scale, DecodeError, e) {
+  using scale::DecodeError;
   switch (e) {
     case DecodeError::NOT_ENOUGH_DATA:
       return "not enough data to decode";
@@ -39,8 +39,8 @@ OUTCOME_CPP_DEFINE_CATEGORY(kagome::scale, DecodeError, e) {
   return "unknown DecodeError";
 }
 
-OUTCOME_CPP_DEFINE_CATEGORY(kagome::scale, CommonError, e) {
-  using kagome::scale::CommonError;
+OUTCOME_CPP_DEFINE_CATEGORY(scale, CommonError, e) {
+  using scale::CommonError;
   switch (e) {
     case CommonError::UNKNOWN_ERROR:
       return "unknown error";

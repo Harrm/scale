@@ -8,8 +8,8 @@
 #include <boost/format.hpp>
 #include <gsl/span>
 
-OUTCOME_CPP_DEFINE_CATEGORY(kagome::common, UnhexError, e) {
-  using kagome::common::UnhexError;
+OUTCOME_CPP_DEFINE_CATEGORY(scale::common, UnhexError, e) {
+  using scale::common::UnhexError;
   switch (e) {
     case UnhexError::NON_HEX_INPUT:
       return "Input contains non-hex characters";
@@ -20,7 +20,7 @@ OUTCOME_CPP_DEFINE_CATEGORY(kagome::common, UnhexError, e) {
   }
 }
 
-namespace kagome::common {
+namespace scale::common {
 
   std::string int_to_hex(uint64_t n,size_t fixed_width) noexcept {
     std::stringstream result;
@@ -68,4 +68,4 @@ namespace kagome::common {
       return UnhexError::UNKNOWN;
     }
   }
-}  // namespace kagome::common
+}  // namespace scale::common

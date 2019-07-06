@@ -8,9 +8,9 @@
 #include "scale/scale.hpp"
 #include "testutil/outcome.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 /**
  * @given raw string

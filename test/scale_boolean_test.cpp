@@ -11,11 +11,11 @@
 #include "scale/scale_error.hpp"
 #include "testutil/outcome.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::DecodeError;
-using kagome::scale::EncodeError;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::DecodeError;
+using scale::EncodeError;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 /**
  * @given bool values: true and false
@@ -58,7 +58,7 @@ Stream &operator>>(Stream &s, ThreeBooleans &v) {
  */
 TEST(Scale, fixedwidthDecodeBoolFail) {
   auto bytes = ByteArray{0, 1, 2};
-  EXPECT_OUTCOME_FALSE_2(err, kagome::scale::decode<ThreeBooleans>(bytes))
+  EXPECT_OUTCOME_FALSE_2(err, scale::decode<ThreeBooleans>(bytes))
   ASSERT_EQ(err.value(), static_cast<int>(DecodeError::UNEXPECTED_VALUE));
 }
 
@@ -70,7 +70,7 @@ TEST(Scale, fixedwidthDecodeBoolFail) {
  */
 TEST(Scale, fixedwidthDecodeBoolSuccess) {
   auto bytes = ByteArray{0, 1, 0};
-  EXPECT_OUTCOME_TRUE(res, kagome::scale::decode<ThreeBooleans>(bytes))
+  EXPECT_OUTCOME_TRUE(res, scale::decode<ThreeBooleans>(bytes))
   ASSERT_EQ(res.b1, false);
   ASSERT_EQ(res.b2, true);
   ASSERT_EQ(res.b3, false);

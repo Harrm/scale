@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_CORE_SCALE_SCALE_ENCODER_STREAM_HPP
-#define KAGOME_CORE_SCALE_SCALE_ENCODER_STREAM_HPP
+#ifndef CORE_SCALE_SCALE_ENCODER_STREAM_HPP
+#define CORE_SCALE_SCALE_ENCODER_STREAM_HPP
 
 #include <deque>
 #include <optional>
@@ -13,7 +13,7 @@
 #include "detail/fixed_witdh_integer.hpp"
 #include "detail/variant.hpp"
 
-namespace kagome::scale {
+namespace scale {
   /**
    * @class ScaleEncoderStream designed to scale-encode data to stream
    */
@@ -174,6 +174,6 @@ namespace kagome::scale {
     std::deque<uint8_t> stream_;
   };
 
-}  // namespace kagome::scale
+}  // namespace scale
 
-#endif  // KAGOME_CORE_SCALE_SCALE_ENCODER_STREAM_HPP
+#endif  // CORE_SCALE_SCALE_ENCODER_STREAM_HPP

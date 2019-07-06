@@ -3,18 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_OUTCOME_REGISTER_HPP
-#define KAGOME_OUTCOME_REGISTER_HPP
+#ifndef OUTCOME_REGISTER_HPP
+#define OUTCOME_REGISTER_HPP
 
 #include <boost/config.hpp>  // for BOOST_SYMBOL_EXPORT
 #include <string>
 #include <system_error>  // bring in std::error_code et al
 
-#ifndef KAGOME_EXPORT
+#ifndef EXPORT
 #if defined(BOOST_SYMBOL_EXPORT)
-#define KAGOME_EXPORT BOOST_SYMBOL_EXPORT
+#define EXPORT BOOST_SYMBOL_EXPORT
 #else
-#define KAGOME_EXPORT
+#define EXPORT
 #endif
 #endif
 
@@ -40,7 +40,7 @@ namespace __kagome {
       return "";
     }
 
-    KAGOME_EXPORT static const Category<T> &get() {
+    EXPORT static const Category<T> &get() {
       static const Category<T> c;
       return c;
     }
@@ -117,4 +117,4 @@ namespace __kagome {
                 OUTCOME_HPP_DECLARE_ERROR_1)              \
   (__VA_ARGS__)
 
-#endif  // KAGOME_OUTCOME_REGISTER_HPP
+#endif  // OUTCOME_REGISTER_HPP

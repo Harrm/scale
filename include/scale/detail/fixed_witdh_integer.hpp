@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_SCALE_UTIL_HPP
-#define KAGOME_SCALE_UTIL_HPP
+#ifndef SCALE_UTIL_HPP
+#define SCALE_UTIL_HPP
 
 #include <algorithm>
 #include <array>
@@ -16,7 +16,7 @@
 #include "macro/unreachable.hpp"
 #include "scale/outcome_throw.hpp"
 
-namespace kagome::scale::detail {
+namespace scale::detail {
   /**
    * encodeInteger encodes any integer type to little-endian representation
    * @tparam T integer type
@@ -114,6 +114,6 @@ namespace kagome::scale::detail {
 
     return sv;
   }
-}  // namespace kagome::scale::detail
+}  // namespace scale::detail
 
-#endif  // KAGOME_SCALE_UTIL_HPP
+#endif  // SCALE_UTIL_HPP

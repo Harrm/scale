@@ -10,8 +10,8 @@
 #include "scale/scale_decoder_stream.hpp"
 #include "scale/types.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::ScaleDecoderStream;
+using scale::ByteArray;
+using scale::ScaleDecoderStream;
 
 /**
  * @given byte array of 3 items: 0, 1, 2

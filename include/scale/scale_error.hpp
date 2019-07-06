@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_SCALE_ERROR_HPP
-#define KAGOME_SCALE_ERROR_HPP
+#ifndef SCALE_ERROR_HPP
+#define SCALE_ERROR_HPP
 
 #include <outcome/outcome.hpp>
 #include "types.hpp"
 
-namespace kagome::scale {
+namespace scale {
   /**
    * @brief EncodeError enum provides error codes for Encode methods
    */
@@ -38,10 +38,10 @@ namespace kagome::scale {
   enum class CommonError {
     UNKNOWN_ERROR = 1  ///< unknown error
   };
-}  // namespace kagome::scale
+}  // namespace scale
 
-OUTCOME_HPP_DECLARE_ERROR(kagome::scale, EncodeError)
-OUTCOME_HPP_DECLARE_ERROR(kagome::scale, DecodeError)
-OUTCOME_HPP_DECLARE_ERROR(kagome::scale, CommonError)
+OUTCOME_HPP_DECLARE_ERROR(scale, EncodeError)
+OUTCOME_HPP_DECLARE_ERROR(scale, DecodeError)
+OUTCOME_HPP_DECLARE_ERROR(scale, CommonError)
 
-#endif  // KAGOME_SCALE_ERROR_HPP
+#endif  // SCALE_ERROR_HPP

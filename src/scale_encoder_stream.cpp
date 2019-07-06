@@ -9,7 +9,7 @@
 #include "scale/types.hpp"
 #include "scale/outcome_throw.hpp"
 
-namespace kagome::scale {
+namespace scale {
   namespace {
     // must not use these functions outside encodeInteger
     inline void encodeFirstCategory(uint8_t value, ScaleEncoderStream &out) {
@@ -32,7 +32,7 @@ namespace kagome::scale {
     inline void encodeThirdCategory(uint32_t value, ScaleEncoderStream &out) {
       // only values from [kMinUint32, kMinBigInteger) can be put here
       uint32_t v = (value << 2u) + 2;
-      scale::detail::encodeInteger<uint32_t>(v, out);
+      detail::encodeInteger<uint32_t>(v, out);
     }
 
     // calculate number of bytes required
@@ -151,4 +151,4 @@ namespace kagome::scale {
     return putByte(static_cast<uint8_t>(result));
   }
 
-}  // namespace kagome::scale
+}  // namespace scale

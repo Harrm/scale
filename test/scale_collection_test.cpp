@@ -8,11 +8,11 @@
 #include "scale/scale.hpp"
 #include "testutil/outcome.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::CompactInteger;
-using kagome::scale::encode;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::CompactInteger;
+using scale::encode;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 /**
  * @given collection of 80 items of type uint8_t

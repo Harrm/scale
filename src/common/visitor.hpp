@@ -3,15 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_VISITOR_HPP
-#define KAGOME_VISITOR_HPP
+#ifndef VISITOR_HPP
+#define VISITOR_HPP
 
 #include <type_traits>  // for std::decay
 #include <utility>      // for std::forward
 
 #include <boost/variant/apply_visitor.hpp>  // for boost::apply_visitor
 
-namespace kagome {
+namespace scale {
 
   template <typename... Lambdas>
   struct lambda_visitor;
@@ -97,6 +97,6 @@ namespace kagome {
   constexpr decltype(auto) match_in_place(T &&t, Fs &&... fs) {
     return match(std::forward<T>(t), make_visitor(std::forward<Fs>(fs)...));
   }
-}  // namespace kagome
+}  // namespace scale
 
-#endif  // KAGOME_VISITOR_HPP
+#endif  // VISITOR_HPP

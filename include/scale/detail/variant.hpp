@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_SCALE_VARIANT_HPP
-#define KAGOME_SCALE_VARIANT_HPP
+#ifndef SCALE_VARIANT_HPP
+#define SCALE_VARIANT_HPP
 
 #include <boost/variant.hpp>
 #include <outcome/outcome.hpp>
@@ -12,7 +12,7 @@
 #include "scale/outcome_throw.hpp"
 #include "common/visitor.hpp"
 
-namespace kagome::scale::detail {
+namespace scale::detail {
   namespace impl {
     template <uint8_t i, class F, class H, class... T>
     void for_each_apply_impl(F &f);
@@ -41,7 +41,7 @@ namespace kagome::scale::detail {
       template <class H>
       void apply(uint8_t index) {
         // if type matches alternative in variant then encode
-        kagome::visit_in_place(
+        scale::visit_in_place(
             v_,
             [this, index](const H &h) {
               s_ << index << h;  // first byte means type index
@@ -118,6 +118,6 @@ namespace kagome::scale::detail {
     return stream;
   }
 
-}  // namespace kagome::scale::detail
+}  // namespace scale::detail
 
-#endif  // KAGOME_SCALE_VARIANT_HPP
+#endif  // SCALE_VARIANT_HPP

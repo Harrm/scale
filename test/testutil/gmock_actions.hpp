@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_GMOCK_ACTIONS_HPP
-#define KAGOME_GMOCK_ACTIONS_HPP
+#ifndef GMOCK_ACTIONS_HPP
+#define GMOCK_ACTIONS_HPP
 
 #include <gmock/gmock.h>
 #include <boost/system/error_code.hpp>
@@ -62,4 +62,4 @@ ACTION_P(Arg3CallbackWithArg, in) {
   arg3(in);
 }
 
-#endif  // KAGOME_GMOCK_ACTIONS_HPP
+#endif  // GMOCK_ACTIONS_HPP

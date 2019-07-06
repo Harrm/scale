@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_HEXUTIL_HPP
-#define KAGOME_HEXUTIL_HPP
+#ifndef HEXUTIL_HPP
+#define HEXUTIL_HPP
 
 #include <string_view>
 #include <vector>
@@ -12,7 +12,7 @@
 #include <gsl/span>
 #include <outcome/outcome.hpp>
 
-namespace kagome::common {
+namespace scale::common {
 
   /**
    * @brief error codes for exceptions that may occur during unhexing
@@ -58,8 +58,8 @@ namespace kagome::common {
    */
   outcome::result<std::vector<uint8_t>> unhex(std::string_view hex);
 
-}  // namespace kagome::common
+}  // namespace scale::common
 
-OUTCOME_HPP_DECLARE_ERROR(kagome::common, UnhexError);
+OUTCOME_HPP_DECLARE_ERROR(scale::common, UnhexError);
 
-#endif  // KAGOME_HEXUTIL_HPP
+#endif  // HEXUTIL_HPP

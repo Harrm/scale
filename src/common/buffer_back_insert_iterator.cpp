@@ -5,7 +5,7 @@
 
 #include "common/buffer.hpp"
 
-using kagome::common::Buffer;
+using scale::common::Buffer;
 
 class value_type;
 namespace std {

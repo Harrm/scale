@@ -7,9 +7,9 @@
 
 #include <gtest/gtest.h>
 
-using kagome::scale::ByteArray;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 /**
  * @given pair of values of different types: uint8_t and uint32_t

@@ -8,13 +8,13 @@
 #include "scale/scale.hpp"
 #include "testutil/outcome.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::decode;
-using kagome::scale::DecodeError;
-using kagome::scale::encode;
-using kagome::scale::EncodeError;
-using kagome::scale::ScaleDecoderStream;
-using kagome::scale::ScaleEncoderStream;
+using scale::ByteArray;
+using scale::decode;
+using scale::DecodeError;
+using scale::encode;
+using scale::EncodeError;
+using scale::ScaleDecoderStream;
+using scale::ScaleEncoderStream;
 
 // TODO(yuraz): PRE-119 refactor to parameterized tests
 /**

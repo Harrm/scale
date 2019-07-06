@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_CORE_SCALE_SCALE_DECODER_STREAM_HPP
-#define KAGOME_CORE_SCALE_SCALE_DECODER_STREAM_HPP
+#ifndef CORE_SCALE_SCALE_DECODER_STREAM_HPP
+#define CORE_SCALE_SCALE_DECODER_STREAM_HPP
 
 #include <optional>
 
@@ -13,7 +13,7 @@
 #include "detail/variant.hpp"
 #include "outcome_throw.hpp"
 
-namespace kagome::scale {
+namespace scale {
   class ScaleDecoderStream {
    public:
     explicit ScaleDecoderStream(gsl::span<const uint8_t> span);
@@ -167,6 +167,6 @@ namespace kagome::scale {
     SizeType current_index_;
   };
 
-}  // namespace kagome::scale
+}  // namespace scale
 
-#endif  // KAGOME_CORE_SCALE_SCALE_DECODER_STREAM_HPP
+#endif  // CORE_SCALE_SCALE_DECODER_STREAM_HPP

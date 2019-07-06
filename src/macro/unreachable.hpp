@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_UNREACHABLE_HPP
-#define KAGOME_UNREACHABLE_HPP
+#ifndef UNREACHABLE_HPP
+#define UNREACHABLE_HPP
 
 /**
  * @brief This file declares UNREACHABLE macro. Use it to prevent compiler
@@ -23,4 +23,4 @@ class Unreachable_At_Line {};
 
 #undef GCC_VERSION
 
-#endif  // KAGOME_UNREACHABLE_HPP
+#endif  // UNREACHABLE_HPP

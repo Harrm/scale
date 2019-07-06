@@ -10,7 +10,7 @@
 #include "macro/unreachable.hpp"
 #include "scale/outcome_throw.hpp"
 
-namespace kagome::scale {
+namespace scale {
   namespace {
     CompactInteger decodeCompactInteger(ScaleDecoderStream &stream) {
       auto first_byte = stream.nextByte();
@@ -135,4 +135,4 @@ namespace kagome::scale {
     ++current_index_;
     return *current_iterator_++;
   }
-}  // namespace kagome::scale
+}  // namespace scale

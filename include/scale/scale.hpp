@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_SCALE_HPP
-#define KAGOME_SCALE_HPP
+#ifndef SCALE_HPP
+#define SCALE_HPP
 
 #include <vector>
 
@@ -15,7 +15,7 @@
 #include "scale_decoder_stream.hpp"
 #include "scale_encoder_stream.hpp"
 
-namespace kagome::scale {
+namespace scale {
   /**
    * @brief convenience function for encoding primitives data to stream
    * @tparam Args primitive types to be encoded
@@ -51,5 +51,5 @@ namespace kagome::scale {
 
     return t;
   }
-}  // namespace kagome::scale
-#endif  // KAGOME_SCALE_HPP
+}  // namespace scale
+#endif  // SCALE_HPP

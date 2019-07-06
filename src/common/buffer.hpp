@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_BUFFER_HPP
-#define KAGOME_BUFFER_HPP
+#ifndef BUFFER_HPP
+#define BUFFER_HPP
 
 #include <string_view>
 #include <vector>
@@ -14,7 +14,7 @@
 #include <gsl/span>
 #include <outcome/outcome.hpp>
 
-namespace kagome::common {
+namespace scale::common {
 
   /**
    * @brief Class represents arbitrary (including empty) byte buffer.
@@ -249,15 +249,15 @@ namespace kagome::common {
 
   std::ostream &operator<<(std::ostream &os, const Buffer &buffer);
 
-}  // namespace kagome::common
+}  // namespace scale::common
 
 namespace std {
   template <>
-  struct hash<kagome::common::Buffer> {
-    size_t operator()(const kagome::common::Buffer &x) const {
+  struct hash<scale::common::Buffer> {
+    size_t operator()(const scale::common::Buffer &x) const {
       return boost::hash_range(x.begin(), x.end());
     }
   };
 }  // namespace std
 
-#endif  // KAGOME_BUFFER_HPP
+#endif  // BUFFER_HPP

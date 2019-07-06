@@ -7,9 +7,9 @@
 
 #include "scale/scale.hpp"
 
-using kagome::scale::ByteArray;
-using kagome::scale::ScaleEncoderStream;
-using kagome::scale::ScaleDecoderStream;
+using scale::ByteArray;
+using scale::ScaleEncoderStream;
+using scale::ScaleDecoderStream;
 
 template <typename T>
 class IntegerTest : public ::testing::TestWithParam<std::pair<T, ByteArray>> {

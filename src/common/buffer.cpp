@@ -7,7 +7,7 @@
 #include "buffer.hpp"
 #include "common/hexutil.hpp"
 
-namespace kagome::common {
+namespace scale::common {
 
   size_t Buffer::size() const {
     return data_.size();
@@ -168,4 +168,4 @@ namespace kagome::common {
     return os << buffer.toHex();
   }
 
-}  // namespace kagome::common
+}  // namespace scale::common

@@ -8,8 +8,8 @@
 #include <gtest/gtest.h>
 #include <testutil/outcome.hpp>
 
-using kagome::scale::decode;
-using kagome::scale::encode;
+using scale::decode;
+using scale::encode;
 
 struct TestStruct {
   std::string a;

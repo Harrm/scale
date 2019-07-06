@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef KAGOME_GTEST_OUTCOME_UTIL_HPP
-#define KAGOME_GTEST_OUTCOME_UTIL_HPP
+#ifndef GTEST_OUTCOME_UTIL_HPP
+#define GTEST_OUTCOME_UTIL_HPP
 
 #include <gtest/gtest.h>
 #include <outcome/outcome.hpp>
@@ -61,4 +61,4 @@
 
 #define EXPECT_ERRCODE_SUCCESS(ec) EXPECT_FALSE(ec) << ec.message();
 
-#endif  // KAGOME_GTEST_OUTCOME_UTIL_HPP
+#endif  // GTEST_OUTCOME_UTIL_HPP
