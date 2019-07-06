@@ -14,5 +14,3 @@ add_library(scale_buffer
 target_link_libraries(scale_buffer
     scale_hexutil
   )
-
-message(STATUS "BBBBBBBBBB ${INCLUDE_DIRECTORIES}")

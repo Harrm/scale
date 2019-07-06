@@ -92,5 +92,3 @@ add_subdirectory(src)
 
 enable_testing()
 add_subdirectory(test)
-
-message(STATUS "AAAAAAAAAAAA ${INCLUDE_DIRECTORIES}")
