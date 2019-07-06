@@ -14,7 +14,7 @@
 #include <boost/endian/arithmetic.hpp>
 #include "scale/scale_error.hpp"
 #include "macro/unreachable.hpp"
-#include "outcome_throw.hpp"
+#include "scale/outcome_throw.hpp"
 
 namespace kagome::scale::detail {
   /**

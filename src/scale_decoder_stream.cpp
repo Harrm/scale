@@ -8,7 +8,7 @@
 #include "scale/scale_error.hpp"
 #include "scale/types.hpp"
 #include "macro/unreachable.hpp"
-#include "outcome_throw.hpp"
+#include "scale/outcome_throw.hpp"
 
 namespace kagome::scale {
   namespace {

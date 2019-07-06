@@ -7,7 +7,7 @@
 
 #include "scale/scale_error.hpp"
 #include "scale/types.hpp"
-#include "outcome_throw.hpp"
+#include "scale/gitoutcome_throw.hpp"
 
 namespace kagome::scale {
   namespace {
