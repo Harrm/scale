@@ -77,8 +77,8 @@ add_subdirectory(deps)
 
 include_directories(
     # project includes
-    ${CURRENT_PROJECT_SOURCE_DIR}/include
-    ${CURRENT_PROJECT_SOURCE_DIR}/src
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/src
 )
 
 include_directories(
@@ -92,3 +92,5 @@ add_subdirectory(src)
 
 enable_testing()
 add_subdirectory(test)
+
+message(STATUS "AAAAAAAAAAAA ${INCLUDE_DIRECTORIES}")

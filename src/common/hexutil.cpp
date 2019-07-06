@@ -4,7 +4,6 @@
  */
 
 #include "common/hexutil.hpp"
-
 #include <boost/algorithm/hex.hpp>
 #include <boost/format.hpp>
 #include <gsl/span>

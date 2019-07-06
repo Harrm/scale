@@ -6,9 +6,6 @@
 add_subdirectory(common)
 
 add_library(scale
-    ../include/scale/scale_decoder_stream.hpp
-    ../include/scale/scale_encoder_stream.hpp
-    ../include/scale/scale_error.hpp
     scale_decoder_stream.cpp
     scale_encoder_stream.cpp
     scale_error.cpp
