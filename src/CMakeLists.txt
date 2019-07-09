@@ -11,6 +11,19 @@ add_library(scale
     scale_error.cpp
     )
 
+target_include_directories(scale PUBLIC
+    SYSTEM
+    # system includes
+    ${PROJECT_SOURCE_DIR}/deps/gsl/include
+    ${PROJECT_SOURCE_DIR}/deps/outcome
+)
+
+target_include_directories(scale PUBLIC
+    # project includes
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/src
+)
+
 target_link_libraries(scale
     Boost::boost
     scale_buffer
