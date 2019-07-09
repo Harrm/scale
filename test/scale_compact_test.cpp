@@ -7,8 +7,8 @@
 
 #include "scale/scale.hpp"
 #include "scale/scale_error.hpp"
-#include "common/buffer.hpp"
-#include "common/hexutil.hpp"
+#include "scale/common/buffer.hpp"
+#include "scale/common/hexutil.hpp"
 #include "testutil/outcome.hpp"
 
 using scale::common::Buffer;
