@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "common/buffer.hpp"
+#include "scale/common/buffer.hpp"
 
 using scale::common::Buffer;
 

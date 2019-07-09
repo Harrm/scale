@@ -3,12 +3,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_subdirectory(common)
+add_subdirectory(scale/common)
 
 add_library(scale
-    scale_decoder_stream.cpp
-    scale_encoder_stream.cpp
-    scale_error.cpp
+    scale/scale_decoder_stream.cpp
+    scale/scale_encoder_stream.cpp
+    scale/scale_error.cpp
     )
 
 target_include_directories(scale PUBLIC

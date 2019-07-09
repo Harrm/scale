@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "common/buffer.hpp"
-#include "buffer.hpp"
-#include "common/hexutil.hpp"
+#include "scale/common/buffer.hpp"
+
+#include "scale/common/hexutil.hpp"
 
 namespace scale::common {
 

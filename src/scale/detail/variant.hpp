@@ -10,7 +10,7 @@
 #include <outcome/outcome.hpp>
 #include "scale/scale_error.hpp"
 #include "scale/outcome_throw.hpp"
-#include "common/visitor.hpp"
+#include "scale/common/visitor.hpp"
 
 namespace scale::detail {
   namespace impl {

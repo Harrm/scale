@@ -10,8 +10,8 @@
 #include <optional>
 
 #include <gsl/span>
-#include "detail/fixed_witdh_integer.hpp"
-#include "detail/variant.hpp"
+#include "scale/detail/fixed_witdh_integer.hpp"
+#include "scale/detail/variant.hpp"
 
 namespace scale {
   /**

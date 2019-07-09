@@ -7,7 +7,7 @@
 
 #include "scale/scale_error.hpp"
 #include "scale/types.hpp"
-#include "macro/unreachable.hpp"
+#include "scale/macro/unreachable.hpp"
 #include "scale/outcome_throw.hpp"
 
 namespace scale {

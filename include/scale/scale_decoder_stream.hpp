@@ -9,9 +9,9 @@
 #include <optional>
 
 #include <gsl/span>
-#include "detail/fixed_witdh_integer.hpp"
-#include "detail/variant.hpp"
-#include "outcome_throw.hpp"
+#include "scale/detail/fixed_witdh_integer.hpp"
+#include "scale/detail/variant.hpp"
+#include "scale/outcome_throw.hpp"
 
 namespace scale {
   class ScaleDecoderStream {

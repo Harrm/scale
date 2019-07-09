@@ -7,7 +7,7 @@
 #define SCALE_ERROR_HPP
 
 #include <outcome/outcome.hpp>
-#include "types.hpp"
+#include "scale/types.hpp"
 
 namespace scale {
   /**

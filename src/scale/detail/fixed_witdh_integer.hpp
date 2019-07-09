@@ -12,8 +12,9 @@
 #include <vector>
 
 #include <boost/endian/arithmetic.hpp>
+
 #include "scale/scale_error.hpp"
-#include "macro/unreachable.hpp"
+#include "scale/macro/unreachable.hpp"
 #include "scale/outcome_throw.hpp"
 
 namespace scale::detail {
