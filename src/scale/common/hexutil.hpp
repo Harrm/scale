@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef HEXUTIL_HPP
-#define HEXUTIL_HPP
+#ifndef SCALE_COMMON_HEXUTIL_HPP
+#define SCALE_COMMON_HEXUTIL_HPP
 
 #include <string_view>
 #include <vector>
@@ -62,4 +62,4 @@ namespace scale::common {
 
 OUTCOME_HPP_DECLARE_ERROR(scale::common, UnhexError);
 
-#endif  // HEXUTIL_HPP
+#endif  // SCALE_COMMON_HEXUTIL_HPP

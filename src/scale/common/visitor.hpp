@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef VISITOR_HPP
-#define VISITOR_HPP
+#ifndef SCALE_COMMON_VISITOR_HPP
+#define SCALE_COMMON_VISITOR_HPP
 
 #include <type_traits>  // for std::decay
 #include <utility>      // for std::forward
@@ -99,4 +99,4 @@ namespace scale {
   }
 }  // namespace scale
 
-#endif  // VISITOR_HPP
+#endif  // SCALE_COMMON_VISITOR_HPP

@@ -10,11 +10,11 @@
 #include <string>
 #include <system_error>  // bring in std::error_code et al
 
-#ifndef EXPORT
+#ifndef SCALE_EXPORT
 #if defined(BOOST_SYMBOL_EXPORT)
-#define EXPORT BOOST_SYMBOL_EXPORT
+#define SCALE_EXPORT BOOST_SYMBOL_EXPORT
 #else
-#define EXPORT
+#define SCALE_EXPORT
 #endif
 #endif
 
@@ -40,7 +40,7 @@ namespace __kagome {
       return "";
     }
 
-    EXPORT static const Category<T> &get() {
+    SCALE_EXPORT static const Category<T> &get() {
       static const Category<T> c;
       return c;
     }

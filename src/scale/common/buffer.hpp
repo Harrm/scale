@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef BUFFER_HPP
-#define BUFFER_HPP
+#ifndef SCALE_COMMON_BUFFER_HPP
+#define SCALE_COMMON_BUFFER_HPP
 
 #include <string_view>
 #include <vector>
@@ -260,4 +260,4 @@ namespace std {
   };
 }  // namespace std
 
-#endif  // BUFFER_HPP
+#endif  // SCALE_COMMON_BUFFER_HPP
